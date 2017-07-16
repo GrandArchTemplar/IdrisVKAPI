@@ -11,6 +11,8 @@ bugtracker = https://github.com/githubuser/IdrisVKAPI/issues
 
 sourcedir  = src
 modules    = Test
+           , Objects.User
+           , Objects.Career
 tests      = Test.spec
 executable = IdrisVKAPI
 main       = Main
