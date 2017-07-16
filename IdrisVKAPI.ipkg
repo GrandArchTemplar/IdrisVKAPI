@@ -1,0 +1,16 @@
+package IdrisVKAPI
+
+version    = 0.0.1
+brief      = "VKAPI iplemented by Idris"
+
+author     = GrandArchTemplar <GrandArchTemplar@gmail.com>
+license    = MIT
+homepage   = none
+sourceloc  = git@github.com:githubuser/IdrisVKAPI.git
+bugtracker = https://github.com/githubuser/IdrisVKAPI/issues
+
+sourcedir  = src
+modules    = Test
+tests      = Test.spec
+executable = IdrisVKAPI
+main       = Main
