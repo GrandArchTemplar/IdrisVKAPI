@@ -9,9 +9,16 @@ import Objects.CropPhoto
 import Objects.Education
 import Objects.LastSeen
 import Objects.Military
+import Objects.Occupation
+import Objects.Personal
+import Objects.Relative
+import Objects.School
+import Objects.University
+import Utils.Types
 -- Util --
 -- This type used in many field for showing permission of any action or simple show existense any field --
-data IsIt = Z | O 
+--IsIt : Type
+--IsIt = Types.IsIt
 
 
 record User where
@@ -73,4 +80,30 @@ record User where
   movies : Maybe String
   music : Maybe String
   nickname : Maybe String
+  occupation : Maybe Occupation.Occupation 
+  online : Maybe IsIt
+  onlineMobile : Maybe IsIt
+  onlineApp : Maybe Integer
+  personal : Maybe Personal.Personal
+  photo50 : Maybe String
+  photo100 : Maybe String
+  photo200 : Maybe String
+  photo200Orig : Maybe String -- bad name
+  photo400Orig : Maybe String -- bad name
+  photoID : Maybe Integer
+  photoMax : Maybe String
+  photoMaxOrig : Maybe String
+  quotes : Maybe String
+  relatives : Maybe $ List Relative.Relative
+  relation : Maybe Integer
+  schools : Maybe $ List School.School
+  screenName : Maybe String
+  sex : Integer -> Maybe Integer
+  site : Maybe String
+  status : Maybe String
+  timeZone : Maybe Integer
+  tv : Maybe String
+  universities : Maybe $ List University.University
+  verified : Integer -> Maybe IsIt
+  wallComments : Integer -> Maybe IsIt
 
